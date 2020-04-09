@@ -107,4 +107,56 @@ const newYearsResolutions = ['Keep a journal', 'Take a falconry class'];
 console.log(newYearsResolutions.length);
 // Output: 2
 ```
+#### The .push() Method
+метод, .push()позволяет нам добавлять элементы в конец массива. 
+```
+const itemTracker = ['item 0', 'item 1', 'item 2'];
+
+itemTracker.push('item 3', 'item 4');
+
+console.log(itemTracker); 
+// Output: ['item 0', 'item 1', 'item 2', 'item 3', 'item 4'];
+```
+#### The .pop() Method
+метод массива .pop()удаляет последний элемент массива.
+```
+const newItemTracker = ['item 0', 'item 1', 'item 2'];
+
+const removed = newItemTracker.pop();
+
+console.log(newItemTracker); 
+// Output: [ 'item 0', 'item 1' ]
+console.log(removed);
+// Output: item 2
+```
+#### More Array Methods
+Вы можете прочитать обо всех методах массива, имеющихся в документации по массиву Mozilla Developer Network (MDN) .
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array
+
+Однако бывают случаи, когда мы не хотим изменять исходный массив, и мы можем использовать методы неизменяемого массива. Обязательно проверьте MDN, чтобы понять поведение используемого вами метода.
+
+Некоторые методы массивов, которые доступны для разработчиков JavaScript включают в себя: .join(), .slice(), .splice(), .shift(), .unshift(), и .concat()среди многих других. Использование этих встроенных методов облегчает выполнение некоторых общих задач при работе с массивами.
+
+#### Arrays and Functions
+```
+const flowers = ['peony', 'daffodil', 'marigold'];
+
+function addFlower(arr) {
+  arr.push('lily');
+}
+
+addFlower(flowers);
+
+console.log(flowers); // Output: ['peony', 'daffodil', 'marigold', 'lily']
+```
+когда вы передаете массив в функцию, если массив видоизменен внутри функции, это изменение будет сохраняться и вне функции. Вы также можете увидеть эту концепцию, объясненную как переход по ссылке, поскольку то, что мы на самом деле передаем функции, является ссылкой на место хранения переменной памяти и изменения памяти.
+
+#### Nested Arrays
+Когда массив содержит другой массив, он называется вложенным массивом .
+```
+const nestedArr = [[1], [2, 3]];
+console.log(nestedArr[1]); // Output: [2, 3]
+console.log(nestedArr[1][0]); // Output: 2
+```
+Чтобы получить доступ к вложенным массивам, мы можем использовать скобочную нотацию со значением индекса, как мы это делали для доступа к любому другому элементу. 
 
