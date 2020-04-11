@@ -359,3 +359,14 @@ const shortWords = words.filter(word => {
   return word.length < 6;
 });
 ```
+#### The .findIndex() Method
+Иногда нам нужно найти местоположение элемента в массиве. Вот где .findIndex()метод приходит! Вызов .findIndex()массива вернет индекс первого элемента, который оценивается trueв функции обратного вызова.
+```
+const jumbledNums = [123, 25, 78, 5, 9]; 
+
+const lessThanTen = jumbledNums.findIndex(num => {
+  return num < 10;
+});
+```
+Если в массиве нет ни одного элемента, удовлетворяющего условию обратного вызова, он .findIndex()вернется -1.
+
