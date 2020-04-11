@@ -391,3 +391,9 @@ numbers.reduce()вызывает .reduce()метод в numbersмассиве и
 .reduce()Метод может также принимать необязательный второй параметр , чтобы задать начальное значение accumulator(помните, первый аргумент функции обратного вызова!). 
 
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array#Iteration_methods
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/some
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/every
+
+
