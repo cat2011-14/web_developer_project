@@ -386,7 +386,9 @@ console.log(summedNums) // Output: 17
 numbers это массив, который содержит числа.
 summedNumsэто переменная , которая хранит возвращаемое значение вызова .reduce()на numbers.
 numbers.reduce()вызывает .reduce()метод в numbersмассиве и принимает функцию обратного вызова в качестве аргумента.
+
 Функция обратного вызова имеет два параметра, accumulatorи currentValue. Значение accumulatorначинается со значения первого элемента в массиве, а currentValueначинается со второго элемента. Чтобы увидеть значение accumulatorи currentValueизменить, просмотрите таблицу выше.
+
 При выполнении .reduce()итераций по массиву возвращаемое значение функции обратного вызова становится accumulatorзначением для следующей итерации, currentValueпринимает значение текущего элемента в циклическом процессе.
 .reduce()Метод может также принимать необязательный второй параметр , чтобы задать начальное значение accumulator(помните, первый аргумент функции обратного вызова!). 
 
@@ -395,5 +397,4 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/some
 
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/every
-
 
